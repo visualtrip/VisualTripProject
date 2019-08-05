@@ -65,7 +65,8 @@ router.post('/signup', (req, res, next) => {
 
     const newUser = new User({
       username,
-      password: hashPass
+      password: hashPass,
+      localization
     })
 
     newUser
