@@ -12,7 +12,7 @@ const MongoStore = require('connect-mongo')(session)
 const flash = require('connect-flash')
 
 mongoose
-  .connect('mongodb://localhost/ih2', { useNewUrlParser: true })
+  .connect('mongodb://localhost/VisualTrip', { useNewUrlParser: true })
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
