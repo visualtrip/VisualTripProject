@@ -10,9 +10,18 @@ router.get('/', (req, res, next) => {
     .catch(err => console.log(err))
 })
 
-// router.get('/api', (req, res, next) => {
-//   Places.find()
-//     .then(allPlaces => res.json(allPlaces))
-//     .catch(err => console.log('error', console.log(err)))
-// })
+router.get('/api', (req, res, next) => {
+  Places.find()
+    .then(allPlaces => res.json(allPlaces))
+    .catch(err => console.log('error', console.log(err)))
+})
+
+router.get('/api/:id', (req, res, next) => {
+  const placeId = req.params.id
+  Places.findOne({_id: placeId})
+    .then(thePlace => res.json(thePlace))
+    .catch(err => console.log('error', console.log(err)))
+})
+
+
 module.exports = router

@@ -137,7 +137,7 @@ const places = [
     name: 'Barron Falls, Australia',
     url: 'https://res.cloudinary.com/ebg-ester/image/upload/v1564987836/Barron%20Falls.jpg',
     lat: -16.832645,
-    long: 145.643732,
+    lon: 145.643732,
     category: 'naturaleza',
     localization: 'Australia'
   },
@@ -146,7 +146,7 @@ const places = [
     name: 'Jökulsárlón,Islandia',
     url: 'https://res.cloudinary.com/ebg-ester/image/upload/v1564987836/J%C3%B6kuls%C3%A1rl%C3%B3n.jpg',
     lat: 64.077664,
-    long: -16.231425,
+    lon: -16.231425,
     category: 'naturaleza',
     localization: 'Islandia'
   },
@@ -155,7 +155,7 @@ const places = [
     name: 'Huaraz, Perú',
     url: 'https://res.cloudinary.com/ebg-ester/image/upload/v1564987836/Huaraz.jpg',
     lat: -9.362255,
-    long: -77.362237,
+    lon: -77.362237,
     category: 'naturaleza',
     localization: 'Huaraz, Perú'
   },
@@ -164,7 +164,7 @@ const places = [
     name: 'White Poket, Arizona',
     url: 'https://res.cloudinary.com/ebg-ester/image/upload/v1564988178/White%20Poket.jpg',
     lat: 36.955821,
-    long: -111.904084,
+    lon: -111.904084,
     category: 'naturaleza',
     localization: 'Arizona, EEUU'
   },
@@ -173,7 +173,7 @@ const places = [
     name: 'Mgarr, Malta',
     url: 'https://res.cloudinary.com/ebg-ester/image/upload/v1564987836/Mgarr.jpg',
     lat: 35.923932,
-    long: 14.343845,
+    lon: 14.343845,
     category: 'naturaleza',
     localization: 'Malta'
   },
