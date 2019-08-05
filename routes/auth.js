@@ -5,16 +5,9 @@ const router = express.Router();
 const User = require("../models/User");
 
 // Bcrypt to encrypt passwords
-<<<<<<< HEAD
-const bcrypt = require("bcrypt");
-const bcryptSalt = 10;
-const Amadeus = require("amadeus");
-
-=======
 const bcrypt = require('bcrypt')
 const bcryptSalt = 10
 const Amadeus = require('amadeus')
->>>>>>> fd17acb038897d2727402e7e2c1342ee6ce2a02d
 const amadeus = new Amadeus({
   clientId: process.env.AMADEUS_CLIENT_ID,
   clientSecret: process.env.AMADEUS_CLIENT_SECRET
