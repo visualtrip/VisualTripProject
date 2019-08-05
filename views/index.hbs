@@ -1,2 +1,38 @@
 <h1>{{title}}</h1>
 <p>Welcome to {{title}}</p>
+
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <a href="/category/naturaleza" role="button" class="btn btn-light" id="nat">Naturaleza</a>
+    </div>
+    <div class="col-4">
+      <a href="/category/ciudad" role="button" class="btn btn-light">Ciudad</a>
+    </div>
+    <div class="col-4">
+      <a href="/category/playa" role="button" class="btn btn-light">Sol y Playa</a>
+    </div>
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="col-4">
+      <a href="/category/gastronomia" role="button" class="btn btn-light">Gastronomía</a>
+    </div>
+    <div class="col-4">
+      <a href="/category/cultural" role="button" class="btn btn-light">Cultural</a>
+    </div>
+    <div class="col-4">
+      <a href="/category/sorpresa" role="button" class="btn btn-light">Sorpresa</a>
+      <!--OJOOOOOOOO-->
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      {{#each places}}
+      <div class="col-4">
+        <a href="/place/{{_id}}"><img class="index-images" src="{{url}}" id="{{name}}"></a>
+      </div>
+      {{/each}}
+    </div>
+  </div>

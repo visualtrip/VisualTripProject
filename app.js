@@ -76,4 +76,10 @@ app.use('/', index)
 const authRoutes = require('./routes/auth')
 app.use('/auth', authRoutes)
 
+const catRoutes = require('./routes/category.routes')
+app.use('/category', catRoutes)
+
+const placeRoutes = require('./routes/place.routes')
+app.use('/place', placeRoutes)
+
 module.exports = app
