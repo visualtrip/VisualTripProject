@@ -56,7 +56,7 @@ hbs.registerHelper('ifUndefined', (value, options) => {
 })
 
 // default value for title local
-app.locals.title = 'Express - Generated with IronGenerator'
+app.locals.title = 'Visual Trip'
 
 // Enable authentication using session + passport
 app.use(
