@@ -7,7 +7,9 @@ const placesSchema = new Schema(
     url: String,
     lat: Number,
     lon: Number,
-    category: String
+    category: String,
+    localization: String
+
   },
   { timestamps: true }
 )

@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="row">
+    {{#each places}}
+    <div class="col-4">
+      <a href="/place/{{_id}}"><img class="index-images" src="{{url}}" id="{{name}}"></a>
+    </div>
+    {{/each}}
+  </div>
+</div>
