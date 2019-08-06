@@ -10,7 +10,13 @@
   <input id="password" type="password" name="password" placeholder="Your password">
   <br><br>
   <label for="localization">Localization</label>
-  <input id="localization" type="text" name="localization" placeholder="Barcelona">
+  <select name="localization" id="airport">
+    <option value="MAD">Madrid</option>
+    <option value="BCN">Barcelona</option>
+    <option value="VLC">Valencia</option>
+    <option value="SCQ">Santiago</option>
+    <option value="SVQ">Sevilla</option>
+  </select>
   {{#if message }}
   <div class="error-message">{{ message }}</div>
   {{/if}}
