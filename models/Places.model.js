@@ -8,8 +8,8 @@ const placesSchema = new Schema(
     lat: Number,
     lon: Number,
     category: String,
-    localization: String
-
+    localization: String,
+    airport: String
   },
   { timestamps: true }
 )
