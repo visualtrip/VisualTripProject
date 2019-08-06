@@ -56,7 +56,7 @@ hbs.registerHelper('ifUndefined', (value, options) => {
 })
 
 // default value for title local
-app.locals.title = 'Visual Trip'
+app.locals.title = 'VisualTrip'
 
 // Enable authentication using session + passport
 app.use(
