@@ -14,15 +14,6 @@ margin-bottom: 3%;
   justify-content: space-between;  
 }
 
-article{
-  margin: 5% auto;
-  width: 60%;
-  text-align: left;
-}
-article h2,h3 {
-  margin: 2%;
-}
-
 .nav-title {
   margin-left: 1vw;
 }
@@ -33,6 +24,14 @@ article h2,h3 {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center
+}
+article{
+  margin: 5% auto;
+  width: 60%;
+  text-align: left;
+}
+article h2,h3 {
+  margin: 2%;
 }
 
 .filters {
@@ -49,9 +48,16 @@ a {
   text-decoration: none;
 }
 
-.index-images {
-  width: 100%;
+figure .index-images {
+  max-width: 85%;
+  max-height: auto
 }
+
+figure .index-images:hover{
+transform: scale(1.1);
+transition: 200ms ease-in-out
+}
+
 div .images{
   margin-bottom: 3%;
 }
