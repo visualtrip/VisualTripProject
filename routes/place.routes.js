@@ -6,6 +6,8 @@ const Places = require('../models/Places.model')
 const passport = require('passport')
 const ensureLogin = require('connect-ensure-login')
 
+
+
 router.get('/:id', ensureLogin.ensureLoggedIn(), (req, res, next) => {
   const placeId = req.params.id
   Places.findById({ _id: placeId })

@@ -1,1 +1,16 @@
-<h1>Bienvenido a tu area privada {{req.user.username}}</h1>
+<h1>Bienvenido a tu area privada, {{user.username}}</h1>
+
+<h2>Hoteles guardados en Favoritos</h2>
+
+{{#each userHotels}}
+<article>
+ <h3>Alojamiento: {{name}}</h3>
+ <h5>Descripción:</h5>
+ <p>{{description}}</p>
+ <h5>Puntuación:</h5>
+ <p>{{score}}</p>
+ <p><a type="button" class="btn btn-outline-dark" href=" {{urlBooking}}" target="_blank">Reserva
+     ya</a></p>
+ <p><a type="button" href="/private/{{_id}}/delete" class="btn btn-outline-dark">Quitar de favoritos</a></p>    
+</article>
+{{/each}}

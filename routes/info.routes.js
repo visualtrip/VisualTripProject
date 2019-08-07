@@ -31,13 +31,25 @@ router.get('/:id', (req, res, next) => {
 })
 
 router.post('/:id', (req, res, next) => {
-  const { name, urlBooking, score, description } = req.body
-  const { owner_id } = req.user._id
+  const { name, urlBooking, score, description, owner } = req.body
+  //const { owner_username } = req.user.username
 
+  Hotels.findOne({ name })
+    .then(hotel => {
+      if (hotel) {
+        if (!(hotel.owner.includes(owner))) {
+          hotel.updateOne({ $push: { owner } })
+            .then(console.log)
+        }
+      }
 
-  Hotels.create({ name, urlBooking, score, description, owner: owner_id })
-    .then(newHotel => console.log(newHotel))
-    .catch(err => console.log(err))
+      else {
+        Hotels.create({ name, urlBooking, score, description, owner })
+          .then(console.log)
+      }
+    })
+    .then(() => res.redirect('/private'))
+    .catch(err => console.log('error', console.log(err)))
 
 
 
