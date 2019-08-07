@@ -7,7 +7,7 @@ const flightsSchema = new Schema(
     destination: String,
     departureDate: Number,
     returnDate: Number,
-    price: String,
+    price: Number,
 
   },
   { timestamps: true }

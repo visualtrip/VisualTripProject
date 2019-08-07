@@ -1,6 +1,9 @@
 const mongoose = require('mongoose')
 const Places = require('../models/Places.model')
-
+Places.collection
+  .drop()
+  .then()
+  .catch()
 const dbName = 'VisualTrip'
 mongoose.connect(`mongodb://localhost/${dbName}`, { useNewUrlParser: true })
 

@@ -82,7 +82,7 @@ app.use('/category', catRoutes)
 const placeRoutes = require('./routes/place.routes')
 app.use('/place', placeRoutes)
 
-const flightRoutes = require('./routes/flights.routes')
-app.use('/flights', flightRoutes)
+const infoRoutes = require('./routes/info.routes')
+app.use('/info', infoRoutes)
 
 module.exports = app
