@@ -12,6 +12,14 @@ nav {
   flex-direction: row;
   justify-content: space-between; }
 
+article {
+  margin: 5% auto;
+  width: 60%;
+  text-align: left; }
+
+article h2, h3 {
+  margin: 2%; }
+
 .nav-title {
   margin-left: 1vw; }
 

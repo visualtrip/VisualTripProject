@@ -11,8 +11,16 @@ margin-bottom: 3%;
 .flex {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  
+  justify-content: space-between;  
+}
+
+article{
+  margin: 5% auto;
+  width: 60%;
+  text-align: left;
+}
+article h2,h3 {
+  margin: 2%;
 }
 
 .nav-title {

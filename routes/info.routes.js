@@ -12,22 +12,22 @@ function createUrl(city) {
 }
 
 
-// router.get('/:id', (req,res,next) =>{
+router.get('/:id', (req, res, next) => {
 
-const placeId = req.params.id
-Places.find({ _id: placeId })
-  .then(thePlace => {
+  const placeId = req.params.id
+  Places.find({ _id: placeId })
+    .then(thePlace => {
 
-    placeLocation = thePlace[0].airport
-    const URL = createUrl(placeLocation)
-    console.log(req.user, "prueba de fuego")
-    axios.get(URL)
-      .then(hotels => res.render('info', { hotels: hotels.data.results, user: req.user }))
-      .catch(err => console.log('error', console.log(err)))
-  })
-  .catch(err => console.log('error', console.log(err)))
-    //console.log(req.user) passport almacena el usuario logeado en el req.user
- 
+      placeLocation = thePlace[0].airport
+      const URL = createUrl(placeLocation)
+      console.log(req.user, "prueba de fuego")
+      axios.get(URL)
+        .then(hotels => res.render('info', { hotels: hotels.data.results, user: req.user }))
+        .catch(err => console.log('error', console.log(err)))
+    })
+    .catch(err => console.log('error', console.log(err)))
+  //console.log(req.user) passport almacena el usuario logeado en el req.user
+
 })
 
 router.post('/:id', (req, res, next) => {
