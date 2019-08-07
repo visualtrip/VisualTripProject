@@ -225,7 +225,7 @@ const places = [
   },
   {
     name: 'Tokyo JP',
-    url: 'https://res.cloudinary.com/dalvmqu1q/image/upload/v1564993626/sushi_japonesa_q9fwzo.jpg',
+    url: 'https://res.cloudinary.com/ousmane11/image/upload/v1565204102/sushi_iiahw1.jpg',
     lat: 35.7649,
     lon: 140.38845,
     category: 'gastronomia',

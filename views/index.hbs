@@ -1,7 +1,7 @@
 <p>Welcome to {{title}}</p>
 <p><i>Choose a picture, discover it's location and get ready to plan your trip</i></Choose>
 </p>
-<div class="container">
+<div class="container-fluid">
   <div class="row">
     <div class="col-4">
       <a href="/category/naturaleza" role="button" class="btn btn-outline-dark" id="nat">Naturaleza</a>
@@ -23,16 +23,15 @@
     </div>
     <div class="col-4 filters">
       <a href="/category/sorpresa" role="button" class="btn btn-outline-dark">Sorpresa</a>
-      <!--OJOOOOOOOO-->
     </div>
   </div>
 
   <div class="container-fluid">
     <div class="row ">
       {{#each places}}
-      <div class="col-4 images">
+      <figure class="col-6 images">
         <a href="/place/{{_id}}"><img class="index-images" src="{{url}}" id="{{name}}"></a>
-      </div>
+      </figure>
       {{/each}}
     </div>
   </div>
