@@ -1,13 +1,24 @@
+<h1>Información Destino</h1>
 
- <div class="container-fluid">
-    <div class="row ">
-      {{#each flyInfo.data}}
-      <p>Destino {{destination}}</p>
-      {{/each}}
-    </div>
-  </div>
+       {{#each hotels}}
+      
+      <p>Nombre Hotel: {{name}}</p>
+      <p>Descripción: {{intro}}</p>
+      <p>Puntuación: {{score}}</p>
+      <p> <a href="{{booking_info.vendor_object_url}}" target="_blank">Reserva ya</a> </p>
     
-{{!--     
-    
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="javascripts/financial-data.js"></script> --}}
+      
+
+      
+
+<form action="/info/:id" method="post">
+  <input class="hidden" name="name" type="text" id="name-input" value="{{name}}">
+  <input class="hidden" name="description" type="text" id="description-input" value="{{intro}}">
+  <input class="hidden" name="score" type="text" id="score-input" value="{{score}}">
+  <input class="hidden" name="urlBooking" type="text" id="urlBooking-input" value="{{booking_info.vendor_object_url}}">
+  <input class="hidden" name="owner" type="text" id="owner-input" value="{{../user._id}}">
+
+<button type="submit">Añadir a favoritos</button>
+
+</form>
+{{/each}}
