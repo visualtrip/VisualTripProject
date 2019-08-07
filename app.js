@@ -69,11 +69,11 @@ app.use(
 app.use(flash())
 require('./passport')(app)
 
-const index = require('./routes/index')
+const index = require('./routes/index.routes')
 app.use('/', index)
 
-const authRoutes = require('./routes/auth')
-app.use('/auth', authRoutes)
+const authRoutes = require('./routes/auth.routes')
+app.use('/', authRoutes)
 
 const catRoutes = require('./routes/category.routes')
 app.use('/category', catRoutes)

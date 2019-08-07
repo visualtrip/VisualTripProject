@@ -7,7 +7,7 @@ const hotelsSchema = new Schema(
     urlBooking: String,
     score: Number,
     description: String,
-    owner: {type: Schema.Types.ObjectId, ref: 'User'}
+    owner: [{type: String, ref: 'User'}]
   },
   { timestamps: true }
 )
