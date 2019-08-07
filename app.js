@@ -69,6 +69,10 @@ app.use(
 app.use(flash())
 require('./passport')(app)
 
+app.get('/', (req, res, next) => {  
+  res.render('',  {user: req.user} ) 
+})
+
 const index = require('./routes/index.routes')
 app.use('/', index)
 
