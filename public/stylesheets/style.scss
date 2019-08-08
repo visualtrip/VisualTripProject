@@ -1,16 +1,16 @@
 body {
   padding-top: 0;
   padding-bottom: 50px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
 }
-nav{
-margin-bottom: 3%;
+nav {
+  margin-bottom: 3%;
 }
 .flex {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 
 .nav-title {
@@ -22,17 +22,17 @@ margin-bottom: 3%;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  align-items: center
+  align-items: center;
 }
-article{
+article {
   margin: 5% auto;
   width: 60%;
   text-align: left;
 }
-article h2,h3 {
+article h2,
+h3 {
   margin: 2%;
 }
-
 
 .filters {
   height: 20%;
@@ -42,46 +42,51 @@ article h2,h3 {
 a {
   color: RGBA(0, 0, 0, 80);
   border: 1px;
-  border-color: black; 
+  border-color: black;
 }
-.none, a:hover{
+.none,
+a:hover {
   text-decoration: none;
 }
 
 figure .index-images {
   max-width: 85%;
-  max-height: auto
+  max-height: auto;
 }
 
-figure .index-images:hover{
-transform: scale(1.1);
-transition: 200ms ease-in-out
+figure .index-images:hover {
+  transform: scale(1.1);
+  transition: 200ms ease-in-out;
 }
 
 .images {
-  margin: 2% auto
+  margin: 2% auto;
 }
 
-
 .choice {
-  width:60%
+  width: 60%;
 }
 .map {
   width: 100%;
   height: 400px;
 }
 
-h1, h2, h3, h4, h5, h6{
-  margin-bottom: 1,2em;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1, 2em;
 }
 
 .hidden {
-  display: none
+  display: none;
 }
 
 ///class de la pagina privado
 .privart {
-  display:flex;
+  display: flex;
   width: 30%;
   height: 100vh;
 }
