@@ -33,9 +33,7 @@ article{
 article h2,h3 {
   margin: 2%;
 }
-.choice {
-  max-width: 100%
-}
+
 
 .filters {
   height: 20%;
@@ -61,9 +59,11 @@ transform: scale(1.1);
 transition: 200ms ease-in-out
 }
 
-div .images{
-  margin-bottom: 3%;
+.images {
+  margin: 2% auto
 }
+
+
 .choice {
   width:60%
 }
