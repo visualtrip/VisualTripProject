@@ -1,19 +1,18 @@
 <h1>Bienvenido a tu area privada, {{user.username}}</h1>
 
 <h2>Hoteles guardados en Favoritos</h2>
-
+<img class="profile-img" src="{{user.imgPath}}" alt="{{user.username}}">
 {{#each userHotels}}
 <article class="destino">
-  <h3>Alojamiento: {{name}}</h3>
+  <h3>{{name}}</h3>
   <h5>Descripción:</h5>
   <p>{{description}}</p>
   <h5>Puntuación:</h5>
   <p>{{score}}</p>
-  <p><a type="button" class="btn btn-outline-info" href="{{urlBooking}}" target="_blank">Reserva
+  <p class="space-buttons"><a role="button" class="btn btn-outline-dark" href="{{urlBooking}}" target="_blank">Reserva
       ya</a></p>
-  <hr>
-  </hr>
-  <p><a type="button" href="/private/{{_id}}/delete" class="btn btn-outline-info">Quitar de favoritos</a></p>
+  <p class="space-buttons"><a role="button" href="/private/{{_id}}/delete" class="btn btn-outline-dark">Quitar de
+      favoritos</a></p>
 </article>
 {{/each}}
 
@@ -21,10 +20,10 @@
 <style>
   body {
     background-image: url(https://res.cloudinary.com/ebg-ester/image/upload/v1565281154/background.jpg);
-    background-repeat: repeat;
     background-position: center;
     background-size: 100% 100%;
     height: -webkit-fill-available;
+    background-attachment: fixed;
 
   }
 </style>

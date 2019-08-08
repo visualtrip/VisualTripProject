@@ -2,7 +2,7 @@
 <section class="signup-form">
 <h2>Registro</h2>
 
-<form action="/signup" method="POST" id="form-container">
+<form action="/signup" method="POST" id="form-container" enctype="multipart/form-data">
   <label for="username">Username</label>
   <input id="username" type="text" name="username" placeholder="JonSnow">
 
@@ -16,6 +16,12 @@
   <label for="password">Contraseña</label>
   <input id="password" type="password" name="password" placeholder="Tu contraseña">
   <br><br>
+
+  <label for="imgPath">Foto de perfil</label>
+  <input id="imgPath" type="file" name="imgPath">
+
+  <br><br>
+
   <label for="localization">Localización</label>
   <select name="localization" id="airport">
     <option value="MAD">Madrid</option>
@@ -30,7 +36,7 @@
 
   <br><br>
 
-  <button class="btn btn-outline-dark">Crear cuenta</button>
+  <button type="submit" class="btn btn-outline-dark">Crear cuenta</button>
   <br><br>
   <p class="account-message">
     ¿Ya tienes cuenta?
