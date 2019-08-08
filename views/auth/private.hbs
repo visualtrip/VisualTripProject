@@ -4,26 +4,27 @@
 
 {{#each userHotels}}
 <article class="destino">
-    <h3>Alojamiento: {{name}}</h3>
-    <h5>Descripción:</h5>
-    <p>{{description}}</p>
-    <h5>Puntuación:</h5>
-    <p>{{score}}</p>
-    <p><a type="button" class="btn btn-outline-info" href="{{urlBooking}}" target="_blank">Reserva
-            ya</a></p>
-    <p><a type="button" href="/private/{{_id}}/delete" class="btn btn-outline-info">Quitar de favoritos</a></p>
+  <h3>Alojamiento: {{name}}</h3>
+  <h5>Descripción:</h5>
+  <p>{{description}}</p>
+  <h5>Puntuación:</h5>
+  <p>{{score}}</p>
+  <p><a type="button" class="btn btn-outline-info" href="{{urlBooking}}" target="_blank">Reserva
+      ya</a></p>
+  <hr>
+  </hr>
+  <p><a type="button" href="/private/{{_id}}/delete" class="btn btn-outline-info">Quitar de favoritos</a></p>
 </article>
 {{/each}}
 
 
 <style>
-body {
-  background-image:url(https://res.cloudinary.com/ebg-ester/image/upload/v1565281154/background.jpg);
-  background-repeat: repeat;
-  background-position: center;
-  background-size: 100% 100%;
-  height: -webkit-fill-available;
+  body {
+    background-image: url(https://res.cloudinary.com/ebg-ester/image/upload/v1565281154/background.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    height: -webkit-fill-available;
 
-}
-
+  }
 </style>

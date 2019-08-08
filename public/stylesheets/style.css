@@ -2,8 +2,7 @@ body {
   padding-bottom: 50px;
   font-family: "Montserrat", sans-serif;
   text-align: center;
-  width: 100vw;
-}
+  width: 100vw; }
 
 nav {
   width: 100vw;
@@ -12,8 +11,7 @@ nav {
   z-index: 9000;
   overflow: hidden;
   position: fixed;
-  top: 0;
-}
+  top: 0; }
 
 .nav-right {
   margin-left: 40%;
@@ -21,73 +19,59 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  align-items: center;
-}
+  align-items: center; }
 
 .flex {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  overflow: scroll;
-}
+  overflow: scroll; }
 
 .first-article {
   text-align: center;
-  width: 90%;
-}
+  width: 90%; }
 
 article {
   margin: 5% auto;
   width: 60%;
-  text-align: left;
-}
+  text-align: left; }
 
 article h2,
 h3 {
-  margin: 2%;
-}
+  margin: 2%; }
 
 .filters {
-  margin: 0 auto;
-}
-.filters a {
-  position: relative;
-  margin: 2%;
-}
+  margin: 0 auto; }
+  .filters a {
+    position: relative;
+    margin: 2%; }
 
 a {
   color: RGBA(0, 0, 0, 80);
   border: 1px;
-  border-color: black;
-}
-a:hover {
-  text-decoration: none;
-}
+  border-color: black; }
+  a:hover {
+    text-decoration: none; }
 
 figure .index-images {
   max-width: 85%;
-  max-height: auto;
-}
+  max-height: auto; }
 
 figure .index-images:hover {
   transform: scale(1.1);
-  transition: 200ms ease-in-out;
-}
+  transition: 200ms ease-in-out; }
 
 .images {
-  margin: 2% auto;
-}
+  margin: 2% auto; }
 
 .choice {
-  width: 60%;
-}
+  width: 60%; }
 
 .map {
   width: 80%;
   height: 400px;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 h1,
 h2,
@@ -95,54 +79,49 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: 1, 2em;
-}
+  margin-bottom: 1, 2em; }
 
 .hidden {
-  display: none;
-}
+  display: none; }
 
 .privart {
   display: flex;
   width: 30%;
-  height: 100vh;
-}
-
-.index-images {
-  box-shadow: 1px 1px #94cbcb, 4px 4px #94cbcb;
-  -webkit-transform: translateX(-3px);
-  transform: translateX(-3px);
-}
-
-.destino {
-  margin-block: ;
-}
+  height: 100vh; }
 
 .login {
-  margin-left: 15vw;
-}
+  margin-left: 15vw; }
 
 .form-login {
   margin-left: 50%;
   margin-right: 1%;
-  margin-top: 10%;
-}
+  margin-top: 10%; }
 
 .signup-form {
   margin-left: -75%;
-  margin-top: 10%;
-}
+  margin-top: 10%; }
+
 @media (max-width: 600px) {
   .nav-icon {
     font-size: 1.1em;
-    margin-top: 5%;
-  }
-}
+    margin-top: 5%; } }
 
 @media (max-width: 415px) {
   .nav-icon {
-    display: none;
-  }
-}
+    display: none; } }
+
+#fondo {
+  background: #d4e4ef;
+  background: -moz-linear-gradient(45deg, #d4e4ef 24%, #d4e4ef 46%, #d4e4ef 58%, #5fb39a 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(24%, #d4e4ef), color-stop(46%, #d4e4ef), color-stop(58%, #d4e4ef), color-stop(100%, #5fb39a));
+  background: -webkit-linear-gradient(45deg, #d4e4ef 24%, #d4e4ef 46%, #d4e4ef 58%, #5fb39a 100%);
+  background: -o-linear-gradient(45deg, #d4e4ef 24%, #d4e4ef 46%, #d4e4ef 58%, #5fb39a 100%);
+  background: -ms-linear-gradient(45deg, #d4e4ef 24%, #d4e4ef 46%, #d4e4ef 58%, #5fb39a 100%);
+  background: linear-gradient(45deg, #d4e4ef 24%, #d4e4ef 46%, #d4e4ef 58%, #5fb39a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#5fb39a', GradientType=1 ); }
+
+.textoCentrado {
+  width: 80%;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */

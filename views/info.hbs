@@ -1,25 +1,29 @@
-<h1>Información Destino</h1>
+<div id="fondo">
+  <h1>Información Destino</h1>
+  <div class="textoCentrado">
+    {{#each hotels}}
 
-{{#each hotels}}
-
-<p>Nombre Hotel: {{name}}</p>
-<p>Descripción: {{intro}}</p>
-<p>Puntuación: {{score}}</p>
-<p> <a href="{{booking_info.vendor_object_url}}" target="_blank">Reserva ya</a> </p>
-
-
-
+    <p>Nombre Hotel: {{name}}</p>
+    <p>Descripción: {{intro}}</p>
+    <p>Puntuación: {{score}}</p>
+    <p> <a class="btn btn-outline-info" href="{{booking_info.vendor_object_url}}" target="_blank">Reserva ya</a> </p>
 
 
-<form action="/info/:id" method="post">
-  <input class="hidden" name="name" type="text" id="name-input" value="{{name}}">
-  <input class="hidden" name="description" type="text" id="description-input" value="{{intro}}">
-  <input class="hidden" name="score" type="text" id="score-input" value="{{score}}">
-  <input class="hidden" name="urlBooking" type="text" id="urlBooking-input" value="{{booking_info.vendor_object_url}}">
-  <input class="hidden" name="owner" type="text" id="owner-input" value="{{../user.username}}">
 
 
-  <button type="submit" class="btn btn-outline-info">Añadir a favoritos</button>
 
-</form>
-{{/each}}
+    <form action="/info/:id" method="post">
+      <input class="hidden" name="name" type="text" id="name-input" value="{{name}}">
+      <input class="hidden" name="description" type="text" id="description-input" value="{{intro}}">
+      <input class="hidden" name="score" type="text" id="score-input" value="{{score}}">
+      <input class="hidden" name="urlBooking" type="text" id="urlBooking-input"
+        value="{{booking_info.vendor_object_url}}">
+      <input class="hidden" name="owner" type="text" id="owner-input" value="{{../user.username}}">
+
+
+      <button type="submit" class="btn btn-outline-info">Añadir a favoritos</button>
+
+    </form>
+    {{/each}}
+  </div>
+</div>

@@ -121,8 +121,6 @@ h6 {
   margin-top: 10%;
 }
 
-
-
 @media (max-width: 600px) {
   .nav-icon {
     font-size: 1.1em;
@@ -133,4 +131,57 @@ h6 {
   .nav-icon {
     display: none;
   }
+}
+
+#fondo {
+  background: rgba(212, 228, 239, 1);
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(212, 228, 239, 1) 24%,
+    rgba(212, 228, 239, 1) 46%,
+    rgba(212, 228, 239, 1) 58%,
+    rgba(95, 179, 154, 1) 100%
+  );
+  background: -webkit-gradient(
+    left bottom,
+    right top,
+    color-stop(24%, rgba(212, 228, 239, 1)),
+    color-stop(46%, rgba(212, 228, 239, 1)),
+    color-stop(58%, rgba(212, 228, 239, 1)),
+    color-stop(100%, rgba(95, 179, 154, 1))
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(212, 228, 239, 1) 24%,
+    rgba(212, 228, 239, 1) 46%,
+    rgba(212, 228, 239, 1) 58%,
+    rgba(95, 179, 154, 1) 100%
+  );
+  background: -o-linear-gradient(
+    45deg,
+    rgba(212, 228, 239, 1) 24%,
+    rgba(212, 228, 239, 1) 46%,
+    rgba(212, 228, 239, 1) 58%,
+    rgba(95, 179, 154, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    45deg,
+    rgba(212, 228, 239, 1) 24%,
+    rgba(212, 228, 239, 1) 46%,
+    rgba(212, 228, 239, 1) 58%,
+    rgba(95, 179, 154, 1) 100%
+  );
+  background: linear-gradient(
+    45deg,
+    rgba(212, 228, 239, 1) 24%,
+    rgba(212, 228, 239, 1) 46%,
+    rgba(212, 228, 239, 1) 58%,
+    rgba(95, 179, 154, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#5fb39a', GradientType=1 );
+}
+
+.textoCentrado {
+  width: 80%;
+  margin: 0 auto;
 }
