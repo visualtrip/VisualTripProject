@@ -51,7 +51,7 @@ figure .index-images:hover {
   transition: 200ms ease-in-out; }
 
 .images {
-  margin: 3% auto; }
+  margin: 2% auto; }
 
 .choice {
   width: 60%; }
@@ -65,5 +65,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .hidden {
   display: none; }
+
+.privart {
+  display: flex;
+  width: 30%;
+  height: 100vh; }
 
 /*# sourceMappingURL=style.css.map */
