@@ -23,6 +23,14 @@ nav {
   align-items: center;
 }
 
+.nav-icon {
+  margin-left: 5%;
+}
+
+.margin-top {
+  margin-top: 10%;
+}
+
 .flex {
   display: flex;
   flex-direction: row;
@@ -92,7 +100,10 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: 1, 2em;
+  margin-bottom: 3%;
+}
+h1{
+  margin-top: 2em;
 }
 
 .hidden {
@@ -122,6 +133,20 @@ h6 {
 }
 
 
+////Private Page
+
+.destino {
+  width:60%;
+  border: 1px solid black ;
+  padding: 2%;
+}
+.space-buttons {
+  text-align: center;
+  margin-bottom: 2%
+}
+
+
+// Responsive VisualTravel
 
 @media (max-width: 600px) {
   .nav-icon {
