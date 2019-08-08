@@ -67,8 +67,9 @@ transition: 200ms ease-in-out
   width:60%
 }
 .map {
-  width: 100%;
+  width: 80%;
   height: 400px;
+  margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -85,3 +86,23 @@ h1, h2, h3, h4, h5, h6{
   width: 30%;
   height: 100vh;
 }
+
+.login {
+  margin-left: 15vw 
+}
+
+.form-login {
+  margin-left: 50%;
+  margin-right: 1%;
+  margin-top: 10%;
+}
+
+.signup-form {
+  margin-left: -75%;
+  margin-top: 10%;
+}
+
+
+// main {
+//   margin-top: -50px;
+// }

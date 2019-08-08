@@ -1,4 +1,7 @@
-<h2>Login</h2>
+<div class="login">
+
+<section class="form-login">
+  <h2>Inicia sesión</h2>
 
 <form action="/login" method="POST" id="form-container">
   <label for="username">Username</label>
@@ -6,8 +9,8 @@
 
   <br><br>
 
-  <label for="password">Password</label>
-  <input id="password" type="password" name="password" placeholder="Your password">
+  <label for="password">Contraseña</label>
+  <input id="password" type="password" name="password" placeholder="Tu contraseña">
   <br>
   {{#if message }}
   <div class="error-message">{{ message }}</div>
@@ -15,10 +18,24 @@
 
   <br>
 
-  <button class="btn btn-outline-dark">Login</button>
+  <button class="btn btn-outline-dark">Acceder</button>
   <br><br>
   <p class="account-message">
-    Don't have an account yet?
-    <a href="/signup">Signup</a>
+    ¿Aún no tienes cuenta?
+    <a href="/signup">Regístrate</a>
   </p>
 </form>
+</section>
+</div>
+
+ <style>
+  body {
+  background-image:url(https://res.cloudinary.com/ebg-ester/image/upload/v1565278023/bg_.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  height: -webkit-fill-available;
+  }
+
+
+  </style>
