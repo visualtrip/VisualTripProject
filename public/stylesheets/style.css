@@ -30,9 +30,6 @@ article {
 article h2, h3 {
   margin: 2%; }
 
-.choice {
-  max-width: 100%; }
-
 .filters {
   height: 20%;
   margin-bottom: 3%; }
@@ -53,8 +50,8 @@ figure .index-images:hover {
   transform: scale(1.1);
   transition: 200ms ease-in-out; }
 
-div .images {
-  margin-bottom: 3%; }
+.images {
+  margin: 2% auto; }
 
 .choice {
   width: 60%; }
@@ -68,5 +65,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .hidden {
   display: none; }
+
+.privart {
+  display: flex;
+  width: 30%;
+  height: 100vh; }
 
 /*# sourceMappingURL=style.css.map */

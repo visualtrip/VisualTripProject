@@ -20,5 +20,5 @@ router.get('/:id', (req, res, next) => {
     .then(places => res.render('categories-index', {places: places , user: req.user}))
     .catch(err => console.log(err))
 })
-
+  
 module.exports = router
