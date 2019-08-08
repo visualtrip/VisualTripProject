@@ -1,50 +1,48 @@
 body {
-  
   padding-bottom: 50px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   width: 100vw;
 }
-   nav{
-     width: 100vw;
-   display: flex;
-   background-color: white;
-   z-index:9000;
-   overflow: hidden;
-   position: fixed;
-  top: 0
-   }
-   
-   .nav-right {
-     margin-left: 40%;
-     width: 50%;
-     display: flex;
-     flex-direction: row;
-     justify-content: flex-end;
-     align-items: center
-      }
-   
+nav {
+  width: 100vw;
+  display: flex;
+  background-color: white;
+  z-index: 9000;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+}
+
+.nav-right {
+  margin-left: 40%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
 
 .flex {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between; 
+  justify-content: space-between;
   overflow: scroll;
 }
 
-
-.first-article{
+.first-article {
   text-align: center;
-  width:90%
+  width: 90%;
 }
 
-article{
+article {
   margin: 5% auto;
   width: 60%;
   text-align: left;
 }
-article h2,h3 {
+article h2,
+h3 {
   margin: 2%;
 }
 
@@ -59,30 +57,28 @@ article h2,h3 {
 a {
   color: RGBA(0, 0, 0, 80);
   border: 1px;
-  border-color: black; 
-    &:hover{
-  text-decoration: none;
+  border-color: black;
+  &:hover {
+    text-decoration: none;
   }
 }
 
-
 figure .index-images {
   max-width: 85%;
-  max-height: auto
+  max-height: auto;
 }
 
-figure .index-images:hover{
-transform: scale(1.1);
-transition: 200ms ease-in-out
+figure .index-images:hover {
+  transform: scale(1.1);
+  transition: 200ms ease-in-out;
 }
 
 .images {
-  margin: 2% auto
+  margin: 2% auto;
 }
 
-
 .choice {
-  width:60%
+  width: 60%;
 }
 .map {
   width: 80%;
@@ -90,23 +86,28 @@ transition: 200ms ease-in-out
   margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5, h6{
-  margin-bottom: 1,2em;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1, 2em;
 }
 
 .hidden {
-  display: none
+  display: none;
 }
 
 ///class de la pagina privado
 .privart {
-  display:flex;
+  display: flex;
   width: 30%;
   height: 100vh;
 }
 
 .login {
-  margin-left: 15vw 
+  margin-left: 15vw;
 }
 
 .form-login {
