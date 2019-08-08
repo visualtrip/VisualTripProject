@@ -1,14 +1,8 @@
 const mongoose = require("mongoose");
 const Places = require("../models/Places.model");
-Places.collection
-  .drop()
-  .then()
-  .catch();
-const dbName = "VisualTrip";
-mongoose.connect(`mongodb://localhost/${dbName}`, { useNewUrlParser: true });
+require('dotenv').config()
 
-const dbName = "VisualTrip";
-mongoose.connect(`mongodb://localhost/${dbName}`, { useNewUrlParser: true });
+mongoose.connect(process.env.DBURL, { useNewUrlParser: true });
 Places.collection
   .drop()
   .then()
