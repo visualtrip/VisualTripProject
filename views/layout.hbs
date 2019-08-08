@@ -24,9 +24,14 @@
     </div>
     <div class="nav-right">
       <div><a class="nav-item nav-link active" href="/">Home</a></div>
-      <div><a class="nav-item nav-link active" href="/auth/login">Login</a></div>
-      <div><a class="nav-item nav-link active" href="/auth/signup">Signup</a></div>
-      <div><a class="nav-item nav-link active" href="/auth/logout">Logout</a></div>
+      {{#if user}}
+      <div><a class="nav-item nav-link active">Hola {{user.username}}</a></div>
+      <div><a class="nav-item nav-link active" href="/private">Mi perfil</a></div>
+      {{else}}
+      <div><a class="nav-item nav-link active" href="/login">Login</a></div>
+      <div><a class="nav-item nav-link active" href="/signup">Signup</a></div>
+      {{/if}}
+      <div><a class="nav-item nav-link active" href="/logout">Logout</a></div>
     </div>
   </nav>
 

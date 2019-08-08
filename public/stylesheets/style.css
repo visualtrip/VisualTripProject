@@ -22,6 +22,17 @@ nav {
   justify-content: flex-end;
   align-items: center; }
 
+article {
+  margin: 5% auto;
+  width: 60%;
+  text-align: left; }
+
+article h2, h3 {
+  margin: 2%; }
+
+.choice {
+  max-width: 100%; }
+
 .filters {
   height: 20%;
   margin-bottom: 3%; }
@@ -34,8 +45,13 @@ a {
 .none, a:hover {
   text-decoration: none; }
 
-.index-images {
-  width: 100%; }
+figure .index-images {
+  max-width: 85%;
+  max-height: auto; }
+
+figure .index-images:hover {
+  transform: scale(1.1);
+  transition: 200ms ease-in-out; }
 
 div .images {
   margin-bottom: 3%; }
@@ -49,5 +65,8 @@ div .images {
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1,2em; }
+
+.hidden {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

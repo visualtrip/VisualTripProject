@@ -1,5 +1,11 @@
 const mongoose = require("mongoose");
 const Places = require("../models/Places.model");
+Places.collection
+  .drop()
+  .then()
+  .catch();
+const dbName = "VisualTrip";
+mongoose.connect(`mongodb://localhost/${dbName}`, { useNewUrlParser: true });
 
 const dbName = "VisualTrip";
 mongoose.connect(`mongodb://localhost/${dbName}`, { useNewUrlParser: true });
@@ -16,7 +22,7 @@ const places = [
     lon: 24.7453688,
     category: "ciudad",
     localization: "Tallin, Estonia",
-    airport: "TLL"
+    airport: "Tallinn"
   },
   {
     name: "Seychelles",
@@ -26,7 +32,7 @@ const places = [
     lon: 55.4540146,
     category: "playa",
     localization: "Islas Seychelles",
-    airport: "SEZ"
+    airport: "Seychelles"
   },
   {
     name: "Jökulsárlón,Islandia",
@@ -36,7 +42,7 @@ const places = [
     lon: -16.231425,
     category: "naturaleza",
     localization: "Islandia",
-    airport: "KEF"
+    airport: "Akranes"
   },
   {
     name: "Vancouver",
@@ -46,7 +52,7 @@ const places = [
     lon: -123.12900000000002,
     category: "ciudad",
     localization: "Vancouver, Canadá",
-    airport: "YVR"
+    airport: "Vancouver"
   },
   {
     name: "San Fermines Pamplona",
@@ -56,7 +62,7 @@ const places = [
     lon: -1.6442600000000311,
     category: "cultural",
     localization: "Pamplona, España",
-    airport: "PNA"
+    airport: "Pamplona"
   },
   {
     name: "Maldivas",
@@ -66,7 +72,7 @@ const places = [
     lon: 73.3287853,
     category: "playa",
     localization: "Islas Maldivas",
-    airport: "MLE"
+    airport: "Maldives"
   },
   {
     name: "Agra India",
@@ -76,7 +82,7 @@ const places = [
     lon: 78.0098161,
     category: "cultural",
     localization: "Agra, India",
-    airport: "AGR"
+    airport: "Agra"
   },
   {
     name: "Chicago",
@@ -86,7 +92,7 @@ const places = [
     lon: -87.6244212,
     category: "ciudad",
     localization: "Chicago, EEUU",
-    airport: "ORB"
+    airport: "Chicago"
   },
   {
     name: "Honolulu US",
@@ -96,7 +102,7 @@ const places = [
     lon: -157.9225,
     category: "gastronomia",
     localization: "Honolulu, Hawai",
-    airport: "HNL"
+    airport: "Honolulu"
   },
   {
     name: "Konya Turkia",
@@ -106,7 +112,7 @@ const places = [
     lon: 32.4844015,
     category: "cultural",
     localization: "Konya, Turquía",
-    airport: "KYA"
+    airport: "Konya"
   },
   {
     name: "Athens GR",
@@ -116,7 +122,7 @@ const places = [
     lon: 23.716111,
     category: "gastronomia",
     localization: "Atenas, Grecia",
-    airport: "ATH"
+    airport: "Athens"
   },
   {
     name: "Morocco",
@@ -125,8 +131,8 @@ const places = [
     lat: 31.0451,
     lon: -7.13103000000001,
     category: "cultural",
-    localization: "Marruecos",
-    airport: "RAK"
+    localization: "Agadir, Marruecos",
+    airport: "Agadir"
   },
   {
     name: "Huaraz, Perú",
@@ -136,7 +142,7 @@ const places = [
     lon: -77.362237,
     category: "naturaleza",
     localization: "Huaraz, Perú",
-    airport: "LIM"
+    airport: "Huaraz"
   },
   {
     name: "Auckland NZ",
@@ -146,7 +152,7 @@ const places = [
     lon: 174.763805,
     category: "ciudad",
     localization: "Auckland, Nueva Zelanda",
-    airport: "AKL"
+    airport: "Auckland"
   },
   {
     name: "Rosario AR",
@@ -156,7 +162,7 @@ const places = [
     lon: -60.784444,
     category: "gastronomia",
     localization: "Rosario, Argentina",
-    airport: "ROS"
+    airport: "Buenos_Aires"
   },
   {
     name: "Dakar",
@@ -166,7 +172,7 @@ const places = [
     lon: -17.447938,
     category: "playa",
     localization: "Dakar, Senegal",
-    airport: "DRK"
+    airport: "Dakar"
   },
   {
     name: "Fuzhou",
@@ -176,7 +182,7 @@ const places = [
     lon: 119.2918215,
     category: "ciudad",
     localization: "Fuzhou, China",
-    airport: "FOC"
+    airport: "Fuzhou"
   },
   {
     name: "Granada Nicaragua",
@@ -185,8 +191,8 @@ const places = [
     lat: 11.9347,
     lon: -85.9588,
     category: "cultural",
-    localization: "Granada, Nicaragua",
-    airport: "MGA"
+    localization: "Masaya, Nicaragua",
+    airport: "Masaya"
   },
   {
     name: "White Poket, Arizona",
@@ -196,7 +202,7 @@ const places = [
     lon: -111.904084,
     category: "naturaleza",
     localization: "Arizona, EEUU",
-    airport: "PHX"
+    airport: "Denver"
   },
   {
     name: "Redang- Island",
@@ -206,7 +212,7 @@ const places = [
     lon: 103.01099999999997,
     category: "playa",
     localization: "Isla Redang, Malasia",
-    airport: "RBN"
+    airport: "Pasir_Mas"
   },
   {
     name: "Bangkok TH",
@@ -216,7 +222,7 @@ const places = [
     lon: 100.516667,
     category: "gastronomia",
     localization: "Bangkok, Tailandia",
-    airport: "BKK"
+    airport: "Bangkok"
   },
   {
     name: "Mgarr, Malta",
@@ -226,7 +232,7 @@ const places = [
     lon: 14.343845,
     category: "naturaleza",
     localization: "Malta",
-    airport: "MLA"
+    airport: "Malta"
   },
   {
     name: "Barron Falls, Australia",
@@ -236,17 +242,17 @@ const places = [
     lon: 145.643732,
     category: "naturaleza",
     localization: "Australia",
-    airport: "CNS"
+    airport: "Cairns"
   },
   {
     name: "Tokyo JP",
     url:
-      "https://res.cloudinary.com/dalvmqu1q/image/upload/v1564993626/sushi_japonesa_q9fwzo.jpg",
+      "https://res.cloudinary.com/ousmane11/image/upload/v1565204102/sushi_iiahw1.jpg",
     lat: 35.7649,
     lon: 140.38845,
     category: "gastronomia",
     localization: "Tokio, Japón",
-    airport: "HND"
+    airport: "Tokyo"
   },
   {
     name: "Mallorca cala des moro",
@@ -256,7 +262,7 @@ const places = [
     lon: 3.301722,
     category: "playa",
     localization: "Mallorca, España",
-    airport: "PMI"
+    airport: "Manacor"
   }
 ];
 

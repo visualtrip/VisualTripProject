@@ -6,7 +6,7 @@ const Places = require('../models/Places.model')
 /* GET home page */
 router.get('/', (req, res, next) => {
   Places.find()
-    .then(places => res.render('index', { places }))
+    .then(places => res.render('index', { places , user: req.user}))
     .catch(err => console.log(err))
 })
 

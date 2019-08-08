@@ -9,7 +9,7 @@ router.get('/sorpresa', (req, res) => {
   const random = Math.floor(Math.random() * 24)
   Places.find()
     .then(places => {
-      res.render('categories-index', { places: [places[random]] })
+      res.render('categories-index', { places: [places[random]], user: req.user})
     })
     .catch(err => console.log(err))
 })
@@ -17,7 +17,7 @@ router.get('/sorpresa', (req, res) => {
 router.get('/:id', (req, res, next) => {
   const catName = req.params.id
   Places.find({ category: catName })
-    .then(places => res.render('categories-index', { places })
+    .then(places => res.render('categories-index', { places , user: req.user})
       .catch(err => console.log(err)))
 })
 

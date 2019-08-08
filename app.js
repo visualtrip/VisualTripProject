@@ -57,7 +57,6 @@ hbs.registerHelper('ifUndefined', (value, options) => {
 
 // default value for title local
 app.locals.title = 'VisualTrip'
-
 // Enable authentication using session + passport
 app.use(
   session({
@@ -70,11 +69,15 @@ app.use(
 app.use(flash())
 require('./passport')(app)
 
-const index = require('./routes/index')
+app.get('/', (req, res, next) => {  
+  res.render('',  {user: req.user} ) 
+})
+
+const index = require('./routes/index.routes')
 app.use('/', index)
 
-const authRoutes = require('./routes/auth')
-app.use('/auth', authRoutes)
+const authRoutes = require('./routes/auth.routes')
+app.use('/', authRoutes)
 
 const catRoutes = require('./routes/category.routes')
 app.use('/category', catRoutes)
@@ -82,7 +85,10 @@ app.use('/category', catRoutes)
 const placeRoutes = require('./routes/place.routes')
 app.use('/place', placeRoutes)
 
-const flightRoutes = require('./routes/flights.routes')
-app.use('/flights', flightRoutes)
+const infoRoutes = require('./routes/info.routes')
+app.use('/info', infoRoutes)
+
+const privateRoutes = require('./routes/private.routes')
+app.use('/private', privateRoutes)
 
 module.exports = app

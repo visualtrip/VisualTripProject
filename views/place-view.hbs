@@ -1,10 +1,10 @@
 <h2>Enhorabuena, has elegido un lugar maravilloso</h2>
 <h6>Tu lugar escogido se encuentra en {{place.localization}}</h6>
-<div><img class="choice" src="{{place.url}}"></div>
+<figure><img class="choice" src="{{place.url}}"></figure>
 <h4>Tu lugar escogido se encuentra en {{place.localization}}</h4>
 <figure id="map" class="map"></figure>
 <hr>
-<a href="#">Buscar vuelos</a>
+<a href="/info/{{place._id}}">Buscar hotel</a>
 
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDG88rK2sVwRDbZIJautuIZpNt32kAQpSU"></script>
