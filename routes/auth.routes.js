@@ -87,7 +87,7 @@ router.post('/signup', (req, res, next) => {
 
   let { subject, message } = req.body
 
-  message = `http://localhost:3000/confirm/${confirmationCode}`
+  message = `http://visualtrip.herokuapp.com/confirm/${confirmationCode}`
   transporter.sendMail({
     from: '"VisualTrip" <visualtrip@project.com>',
     to: email,

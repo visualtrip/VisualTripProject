@@ -1,37 +1,28 @@
-<p>Welcome to {{title}}</p>
-<p><i>Choose a picture, discover it's location and get ready to plan your trip</i></Choose>
-</p>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-4">
-      <a href="/category/naturaleza" role="button" class="btn btn-outline-dark" id="nat">Naturaleza</a>
-    </div>
-    <div class="col-4">
-      <a href="/category/ciudad" role="button" class="btn btn-outline-dark">Ciudad</a>
-    </div>
-    <div class="col-4">
-      <a href="/category/playa" role="button" class="btn btn-outline-dark">Sol y Playa</a>
-    </div>
-  </div>
-  <br><br>
-  <div class="row">
-    <div class="col-4 filters">
-      <a href="/category/gastronomia" role="button" class="btn btn-outline-dark">Gastronomía</a>
-    </div>
-    <div class="col-4 filters">
-      <a href="/category/cultural" role="button" class="btn btn-outline-dark">Cultural</a>
-    </div>
-    <div class="col-4 filters">
-      <a href="/category/sorpresa" role="button" class="btn btn-outline-dark">Sorpresa</a>
-    </div>
-  </div>
 
-  <div class="container-fluid">
-    <div class="row ">
-      {{#each places}}
-      <figure class="col-6 images">
-        <a href="/place/{{_id}}"><img class="index-images" src="{{url}}" id="{{name}}"></a>
-      </figure>
-      {{/each}}
-    </div>
+<article class="first-article">
+  <p>Bienvenido a {{title}}</p>
+<p><i>Elige una foto, descubre su localización y los mejores hoteles y empieza a planear tu viaje</i></Choose>
+</p>
+</article>
+
+<div class="filters">
+  <a href="/category/naturaleza" role="button" class="btn btn-outline-dark" id="nat">Naturaleza</a>
+  <a href="/category/ciudad" role="button" class="btn btn-outline-dark">Ciudad</a>
+  <a href="/category/playa" role="button" class="btn btn-outline-dark">Playa</a>
+</div>
+
+<div class="filters">
+  <a href="/category/gastronomia" role="button" class="btn btn-outline-dark">Gastro</a>
+  <a href="/category/cultural" role="button" class="btn btn-outline-dark">Cultural</a>
+  <a href="/category/sorpresa" role="button" class="btn btn-outline-dark">Sorpresa</a>
+</div>
+
+<div class="container-fluid">
+  <div class="row ">
+    {{#each places}}
+    <figure class="col-6 images">
+      <a href="/place/{{_id}}"><img class="index-images" src="{{url}}" id="{{name}}"></a>
+    </figure>
+    {{/each}}
   </div>
+</div>
