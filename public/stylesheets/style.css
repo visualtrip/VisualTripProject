@@ -66,4 +66,9 @@ h1, h2, h3, h4, h5, h6 {
 .hidden {
   display: none; }
 
+.privart {
+  display: flex;
+  width: 30%;
+  height: 100vh; }
+
 /*# sourceMappingURL=style.css.map */

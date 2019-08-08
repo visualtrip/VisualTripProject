@@ -17,8 +17,8 @@ router.get('/sorpresa', (req, res) => {
 router.get('/:id', (req, res, next) => {
   const catName = req.params.id
   Places.find({ category: catName })
-    .then(places => res.render('categories-index', { places , user: req.user}))
-  .catch (err => console.log(err))
+    .then(places => res.render('categories-index', {places: places , user: req.user}))
+    .catch(err => console.log(err))
 })
   
 module.exports = router

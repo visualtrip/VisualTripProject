@@ -3,7 +3,6 @@ body {
   padding-bottom: 50px;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  //font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
 }
 nav{
 margin-bottom: 3%;
@@ -78,4 +77,11 @@ h1, h2, h3, h4, h5, h6{
 
 .hidden {
   display: none
+}
+
+///class de la pagina privado
+.privart {
+  display:flex;
+  width: 30%;
+  height: 100vh;
 }
