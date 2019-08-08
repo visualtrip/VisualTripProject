@@ -1,7 +1,7 @@
 <h1>Bienvenido a tu area privada, {{user.username}}</h1>
 
 <h2>Hoteles guardados en Favoritos</h2>
-
+<img class="profile-img" src="{{user.imgPath}}" alt="{{user.username}}">
 {{#each userHotels}}
 <article class="destino">
     <h3>Alojamiento: {{name}}</h3>
