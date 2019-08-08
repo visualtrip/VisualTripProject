@@ -50,19 +50,19 @@ article h2,h3 {
 
 .filters {
   margin: 0 auto;
-  a{
-position: relative;
-margin: 2%;
+  a {
+    position: relative;
+    margin: 2%;
   }
- }
+}
 
 a {
   color: RGBA(0, 0, 0, 80);
   border: 1px;
   border-color: black; 
-  &:hover{
+    &:hover{
   text-decoration: none;
-}
+  }
 }
 
 
@@ -121,9 +121,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 
-// main {
-//   margin-top: -50px;
-// }
+
 @media (max-width: 600px) {
   .nav-icon {
     font-size: 1.1em;
