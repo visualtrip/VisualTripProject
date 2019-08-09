@@ -71,7 +71,7 @@ router.post('/signup', uploadCloud.single("imgPath"),(req, res, next) => {
     newUser
       .save()
       .then(() => {
-        res.redirect("/login");
+        res.redirect("/email");
       })
       .catch(err => {
         res.render("auth/signup", { message: "Something went wrong" })
@@ -83,20 +83,23 @@ router.post('/signup', uploadCloud.single("imgPath"),(req, res, next) => {
   let transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
-      user: 'visualtrip.ofe@gmail.com',
-      pass: 'visualtrip1212'
+      user: `${process.env.GMAIL}`,
+      pass: `${process.env.GMAILPASS}`
     }
   })
 
   let { subject, message } = req.body
 
   message = `http://visualtrip.herokuapp.com/confirm/${confirmationCode}`
+
   transporter.sendMail({
     from: '"VisualTrip" <visualtrip@project.com>',
     to: email,
-    subject: subject,
+    subject: "Confirma tu cuenta. VisualTrip",
     text: message,
-    html: `<b>${message}</b>`
+    html: `
+    <img src="https://res.cloudinary.com/ebg-ester/image/upload/v1564674536/webmad0719/video.png.png">
+    <b>${message}</b>`
   })
     .then(info => res.render('message', { email, subject, message, info }))
     .catch(error => console.log(error))
