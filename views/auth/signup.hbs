@@ -1,61 +1,62 @@
 <div class="login">
-<section class="signup-form">
-<h2>Registro</h2>
+  <section class="signup-form">
+    <h2>Registro</h2>
 
-<form action="/signup" method="POST" id="form-container" enctype="multipart/form-data">
-  <label for="username">Username</label>
-  <input id="username" type="text" name="username" placeholder="JonSnow">
+    <form action="/signup" method="POST" id="form-container" enctype="multipart/form-data">
+      <label for="username">Username</label>
+      <input id="username" type="text" name="username" placeholder="JonSnow">
 
-  <br><br>
+      <br><br>
 
-  <label for="email">  E-mail</label>
-  <input id="email" type="email" name="email" placeholder="JonSnow@gmail.com">
+      <label for="email"> E-mail</label>
+      <input id="email" type="email" name="email" placeholder="JonSnow@gmail.com">
 
-  <br><br>
+      <br><br>
 
-  <label for="password">Contraseña</label>
-  <input id="password" type="password" name="password" placeholder="Tu contraseña">
-  <br><br>
+      <label for="password">Contraseña</label>
+      <input id="password" type="password" name="password" placeholder="Tu contraseña">
+      <br><br>
 
-  <label for="imgPath">Foto de perfil</label>
-  <input id="imgPath" type="file" name="imgPath">
+      <label for="imgPath">Foto de perfil</label>
+      <input id="imgPath" type="file" name="imgPath">
 
-  <br><br>
+      <br><br>
 
-  <label for="localization">Localización</label>
-  <select name="localization" id="airport">
-    <option value="MAD">Madrid</option>
-    <option value="BCN">Barcelona</option>
-    <option value="VLC">Valencia</option>
-    <option value="SCQ">Santiago</option>
-    <option value="SVQ">Sevilla</option>
-  </select>
-  {{#if message }}
-  <div class="error-message">{{ message }}</div>
-  {{/if}}
+      <label for="localization">Localización</label>
+      <select name="localization" id="airport">
+        <option value="MAD">Madrid</option>
+        <option value="BCN">Barcelona</option>
+        <option value="VLC">Valencia</option>
+        <option value="SCQ">Santiago</option>
+        <option value="SVQ">Sevilla</option>
+      </select>
+      {{#if message }}
+      <div class="error-message">{{ message }}</div>
+      {{/if}}
 
-  <br><br>
+      <br><br>
 
-  <button type="submit" class="btn btn-outline-dark">Crear cuenta</button>
-  <br><br>
-  <p class="account-message">
-    ¿Ya tienes cuenta?
-    <a href="/login">Accede</a>
-  </p>
-</form>
-</section>
+      <button type="submit" class="btn btn-outline-dark">Crear cuenta</button>
+      <br><br>
+      <p class="account-message">
+        ¿Ya tienes cuenta?
+        <a href="/login">Accede</a>
+      </p>
+    </form>
+  </section>
 </div>
 
 <style>
   body {
-  background-image:url(https://res.cloudinary.com/ebg-ester/image/upload/v1565278023/bg_.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-  height: -webkit-fill-available;
+    background-image: url(https://res.cloudinary.com/ebg-ester/image/upload/v1565278023/bg_.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: -webkit-fill-available;
+    height: -moz-available;
   }
 
   .login {
-    margin-left: 15vw 
+    margin-left: 15vw
   }
-  </style>
+</style>

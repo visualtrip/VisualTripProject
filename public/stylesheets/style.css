@@ -98,9 +98,15 @@ h1 {
   width: 30%;
   height: 100vh; }
 
+.private-fig {
+  border: 2px black solid;
+  position: absolute;
+  top: 10%;
+  right: 2%;
+  width: 13%; }
+
 .profile-img {
-  width: 5%;
-  margin-top: 5%;
+  width: 100%;
   margin-right: 5%; }
 
 .login {
