@@ -1,29 +1,39 @@
-<div id="fondo">
-  <h1>Información Destino</h1>
-  <div class="textoCentrado">
-    {{#each hotels}}
+<h1>Información Destino</h1>
 
-    <p>Nombre Hotel: {{name}}</p>
-    <p>Descripción: {{intro}}</p>
-    <p>Puntuación: {{score}}</p>
-    <p> <a class="btn btn-outline-info" href="{{booking_info.vendor_object_url}}" target="_blank">Reserva ya</a> </p>
-
-
+{{#each hotels}}
+<article class="destino">
+  <h3>Hotel: {{name}}</h3>
+  <h5>Descripción:</h5>
+  <p>{{intro}}</p>
+  <h6>Puntuación: {{score}}</h6>
+  <p> <a class="btn btn-dark" href="{{booking_info.vendor_object_url}}" target="_blank">Reserva ya</a> </p>
 
 
 
-    <form action="/info/:id" method="post">
-      <input class="hidden" name="name" type="text" id="name-input" value="{{name}}">
-      <input class="hidden" name="description" type="text" id="description-input" value="{{intro}}">
-      <input class="hidden" name="score" type="text" id="score-input" value="{{score}}">
-      <input class="hidden" name="urlBooking" type="text" id="urlBooking-input"
-        value="{{booking_info.vendor_object_url}}">
-      <input class="hidden" name="owner" type="text" id="owner-input" value="{{../user.username}}">
 
 
-      <button type="submit" class="btn btn-outline-info">Añadir a favoritos</button>
+  <form action="/info/:id" method="post">
+    <input class="hidden" name="name" type="text" id="name-input" value="{{name}}">
+    <input class="hidden" name="description" type="text" id="description-input" value="{{intro}}">
+    <input class="hidden" name="score" type="text" id="score-input" value="{{score}}">
+    <input class="hidden" name="urlBooking" type="text" id="urlBooking-input"
+      value="{{booking_info.vendor_object_url}}">
+    <input class="hidden" name="owner" type="text" id="owner-input" value="{{../user.username}}">
 
-    </form>
-    {{/each}}
-  </div>
-</div>
+
+    <button type="submit" class="btn btn-dark">Añadir a favoritos</button>
+
+  </form>
+</article>
+{{/each}}
+
+
+<style>
+  body {
+    background-image: url('https://res.cloudinary.com/ousmane11/image/upload/v1565336412/fondo_faro_mar_ieaj2s.jpg');
+    background-position: center;
+    background-size: 100% 100%;
+    height: -webkit-fill-available;
+    background-attachment: fixed;
+  }
+</style>
