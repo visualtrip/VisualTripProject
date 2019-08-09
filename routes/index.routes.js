@@ -12,6 +12,11 @@ router.get('/', (req, res, next) => {
     .catch(err => console.log(err))
 })
 
+router.get("/email", (req, res, next) => {
+  res.render("email-conf");
+});
+
+
 router.get('/api', (req, res, next) => {
   Places.find()
     .then(allPlaces => res.json(allPlaces))
