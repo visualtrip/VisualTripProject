@@ -4,7 +4,7 @@ const Schema   = mongoose.Schema;
 const userSchema = new Schema({
   username: String,
   password: String,
-  localization: String,
+  //localization: String,
   imgPath: String,
   status: {
     type: String,

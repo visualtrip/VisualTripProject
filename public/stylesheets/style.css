@@ -7,7 +7,7 @@ body {
 nav {
   width: 100vw;
   display: flex;
-  background-color: white;
+  background-color: snow;
   z-index: 9000;
   overflow: hidden;
   position: fixed;

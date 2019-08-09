@@ -3,38 +3,38 @@
     <h2>Registro</h2>
 
     <form action="/signup" method="POST" id="form-container" enctype="multipart/form-data">
-      <label for="username">Username</label>
+      <label for="username">Username</label> <br>
       <input id="username" type="text" name="username" placeholder="JonSnow">
 
       <br><br>
 
-      <label for="email"> E-mail</label>
+      <label for="email"> E-mail</label> <br>
       <input id="email" type="email" name="email" placeholder="JonSnow@gmail.com">
 
       <br><br>
 
-      <label for="password">Contraseña</label>
+      <label for="password">Contraseña</label> <br>
       <input id="password" type="password" name="password" placeholder="Tu contraseña">
       <br><br>
 
-      <label for="imgPath">Foto de perfil</label>
+      <label for="imgPath">Foto de perfil</label> <br>
       <input id="imgPath" type="file" name="imgPath">
 
       <br><br>
 
-      <label for="localization">Localización</label>
+      {{!-- <label for="localization">Localización</label>
       <select name="localization" id="airport">
         <option value="MAD">Madrid</option>
         <option value="BCN">Barcelona</option>
         <option value="VLC">Valencia</option>
         <option value="SCQ">Santiago</option>
         <option value="SVQ">Sevilla</option>
-      </select>
+      </select> --}}
       {{#if message }}
       <div class="error-message">{{ message }}</div>
       {{/if}}
 
-      <br><br>
+      {{!-- <br><br> --}}
 
       <button type="submit" class="btn btn-outline-dark">Crear cuenta</button>
       <br><br>

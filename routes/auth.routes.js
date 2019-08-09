@@ -40,7 +40,7 @@ router.get("/signup", (req, res, next) => {
 router.post('/signup', uploadCloud.single("imgPath"),(req, res, next) => {
   const username = req.body.username
   const password = req.body.password
-  const localization = req.body.localization
+  //const localization = req.body.localization
   const email = req.body.email
   const confirmationCode = generateCode()
   const imgPath = req.file.url
@@ -62,7 +62,7 @@ router.post('/signup', uploadCloud.single("imgPath"),(req, res, next) => {
     const newUser = new User({
       username,
       password: hashPass,
-      localization,
+      //localization,
       email,
       confirmationCode,
       imgPath
