@@ -97,9 +97,11 @@ router.post('/signup', uploadCloud.single("imgPath"),(req, res, next) => {
     to: email,
     subject: "Confirma tu cuenta. VisualTrip",
     text: message,
-    html: `
-    <img src="https://res.cloudinary.com/ebg-ester/image/upload/v1564674536/webmad0719/video.png.png">
-    <b>${message}</b>`
+    html: ` <h1>Gracias por crear una cuenta en VisualTrip</h1>
+  <h2>Activa tu cuenta pulsando en el siguiente link:</h2>
+  <a role="button" class="btn btn-dark" href="${message}"><h3>Activar cuenta</h3></a>
+  
+    <img src="https://res.cloudinary.com/ebg-ester/image/upload/v1565346754/visualtriplogo.jpg" alt="logo">`
   })
     .then(info => res.render('message', { email, subject, message, info }))
     .catch(error => console.log(error))

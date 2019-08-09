@@ -16,6 +16,13 @@ router.get("/email", (req, res, next) => {
   res.render("email-conf");
 });
 
+router.get("/ger/sorpresa", (req,res,next)=>{
+  res.render("ger-sospecha")
+})
+
+router.get("/trolleo/ta", (req,res,next)=>{
+  res.render("trollta")
+})
 
 router.get('/api', (req, res, next) => {
   Places.find()
