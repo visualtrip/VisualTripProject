@@ -1,4 +1,5 @@
 # IH-Project-2
 
 VisualTrip
-App con imágenes de lugares. Escoges una, google maps te dice dónde está localizada, y te muestra los hoteles del lugar.
+Travelling web-app. It shows you nice pictures of places, you choose one and it tells you where it's located and helps you find hotels in that destination.
+Stack used: HTML5, CSS3, JS, Node, MongoDB, Express.
